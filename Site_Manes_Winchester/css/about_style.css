@@ -1,0 +1,20 @@
+#banner_about {
+	margin-bottom: 70px;
+}
+#banner_about .banner_img {
+	background-image: url(../img/banner_about.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;	
+	min-height: 326px;
+}
+
+#banner_about  h3 {
+	margin: 23px 0 4px;
+}
+#banner_about  p {
+	margin: 0px;
+}
+.content {
+	margin-bottom: 20px;
+	width: 100%;
+}

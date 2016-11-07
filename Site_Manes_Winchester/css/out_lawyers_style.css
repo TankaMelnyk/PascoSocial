@@ -1,0 +1,46 @@
+#our_lawyers {
+	margin: 25px 0 60px;
+}
+#our_lawyers .container {
+	display: flex;
+}
+#our_lawyers .container .sidebar {
+	padding-right: 30px;
+}
+
+#our_lawyers .sidebar h3{
+	border-bottom: 1px dotted #fff;
+}
+#our_lawyers h3{
+	padding-bottom: 10px;
+	margin: 10px 0;
+}
+#our_lawyers h1{
+	margin: 0px 0 10px 30px;
+}
+/*#our_lawyers h4 {
+	text-transform: uppercase;
+	font-size: 14px;
+	margin: 15px 0 0;
+}*/
+/*#our_lawyers .content{ 
+	width: 66.6%;
+	padding: 0px 0 90px 0px;
+ }*/
+#our_lawyers .content .lawyer { 
+	border-bottom: 1px dotted #fff;
+	padding: 5px 0 0px 30px;
+ }
+#our_lawyers .content .lawyer:last-child { 
+	border-bottom: none;
+ }
+ #our_lawyers .content .wrapper { 
+	display: flex;
+	margin-bottom: 20px;
+ }
+ #our_lawyers .content .wrapper_img { 
+	margin-right: 22px;
+ }
+ #our_lawyers .wrapper p { 
+	margin: 5px 0;
+ }
