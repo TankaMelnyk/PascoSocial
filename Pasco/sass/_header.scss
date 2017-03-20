@@ -1,0 +1,303 @@
+@import "_style";
+header#header {
+	li {
+		display: inline-block;
+	}
+	.wrapper-for-top-menu {
+		background: $top-menu-color;
+
+		@media screen and ( max-width: 640px ) {
+  			background: $top-menu-contrast-color;
+  			position: relative;
+		}
+		.container {
+			height: 40px;
+			a {
+				margin-right: 12px;
+				color: $main-color-text;
+			}
+			i {
+				font-size: 16px;
+			}
+			.social-icon {
+				@media screen and ( max-width: 640px ) {
+		  			display: none;
+				}
+			}
+			.sing-in-and-lang { 
+				li {
+					a {
+						text-transform: uppercase;
+						margin-right: 0;
+						padding: 2px 11px;
+						font-size: 14px;
+						i {
+							padding: 5px;
+						}
+					}
+
+				}
+
+			 	@media screen and ( max-width: 640px ) {
+					.sing-in {
+						position: absolute;
+			 			padding: 0 20px;
+						right: 0;
+					}
+					.language-selection {
+						position: absolute;
+			 			padding: 0;
+						left: 0;
+					}
+					.sing-in>a,
+					.language-selection a {
+						padding: 0px;
+					}
+					ul.dropdown-leng-menu {
+						left: 5px;
+					}	
+				}
+				li.language-selection {
+						position: relative;
+						min-width: 96px;
+				}
+
+				ul.dropdown-leng-menu {
+    				background-color: $top-menu-contrast-color;
+				 	li {
+				 		display: block;
+						line-height: 22px;
+						margin: 0;
+						&:hover {
+				 			font-weight: 600;
+				 			color: #fff;
+				 		}
+				 	}
+
+				}				 	
+				i.fa-chevron-down {
+					font-size: 10px;
+					position: relative;
+					top: -3px;
+					right: -5px;
+				}		
+			}
+		}
+	}
+	
+	.wrapper-for-main-menu-and-title {
+		background: #232323;
+		color: $block-color;
+		position: relative;
+        z-index: 1;
+		
+		.logo-and-main-menu {
+			background: $contrast-color;
+			text-transform: uppercase;
+			.container:first-of-type {
+				.menu-button {
+					display: none;
+					@media screen and ( max-width: 1024px ) {
+						display: block;
+					}
+				}
+				.logo {
+					font-family: $font-montserrat;
+					font-size: 24px;
+				    font-weight: bold;
+				    line-height: 70px;
+					@media screen and ( max-width: 1024px ) {
+						margin: 0 auto;
+					}
+				}
+				.menu {
+					li {
+						margin: 0 20px 0 0;
+						a:hover {
+							border-bottom: 4px solid #ff4081;
+						}
+					}
+					a {
+						color: #fff;
+			    		font-weight: bold;
+						padding:  21px 10px 22px 5px;
+						border-bottom: 4px solid transparent;
+						line-height: 66px;
+						&.fall:after {
+							font-family: "FontAwesome";
+							content: "\f078";
+							font-size: 10px;
+							position: relative;
+							top: -2px;
+							right: -10px;
+						}							
+						&.right:after {
+							font-family: "FontAwesome";
+							content: "\f054";
+							font-size: 10px;
+							position: relative;
+							top: -2px;
+							right: -10px;
+						}
+					}
+					.submenu {
+						position: absolute;
+						background: rgba(48, 63, 159, 0.1);
+						z-index: 10;
+						transform-origin: 0% 0%;
+						transform-style: preserve-3d;
+						transition: .3s linear;
+						min-width: 200px;
+						li {
+							margin: 0 0 0 0;
+							position: relative;
+							display: block;
+							a {
+								padding: 10px 20px;
+								font-size: 13px;
+								&:hover {
+									border-bottom: none;
+								}
+							}
+							&:hover {
+								background: rgba(48, 63, 159, 0.2);
+							}
+						}
+					}
+					@media screen and ( max-width: 1024px ) {
+						li {
+							display: none;
+						}
+
+					}					
+				}
+				.additional-info {
+					@media screen and ( max-width: 1024px ) {
+						li:not(.cart) {
+							display: none;
+						}
+
+					}
+				}
+			}
+			.container:last-of-type {
+				ul.accordion {
+					width: 100%;
+					margin-bottom: 20px;
+					li {
+						display: block;
+						background: rgba(0, 0, 0, .6);
+					}
+					@media screen and ( min-width: 1023px ) {
+						display: none;
+					}
+				}
+			}
+		}
+		.title {
+			background: rgba(33, 33, 33, 0.87);
+			.container {
+				max-width: 100%;
+				margin: 0;
+				text-align: center;
+				.arrow {
+					a>i {
+						font-size: 38px;
+						padding: 320px 40px;
+						@media screen and ( max-width: 1024px ) {
+							padding: 320px 5px;
+						}
+					}
+				}
+				hgroup {
+					max-width: 620px;
+					padding-top: 100px;					
+				    text-transform: uppercase;
+					h2 {
+						font-size: 17px;
+						line-height: 30px;
+						letter-spacing: 0.5px;
+						opacity: 0.7;
+						font-weight: 100;
+					}
+					h1 {
+						font-size: 30px;
+						letter-spacing: 0.5px;
+						font-weight: 900;
+					}
+				}
+				a.button {					
+				    text-transform: uppercase;
+					font-size: 14px;
+					background: $contrast-color;
+					line-height: 100px;
+					padding: 10px 30px;
+					border-radius: 30px;
+					&:hover {
+		 				background: $contrast-hover-color;
+		 			}
+				}
+				.author-info {	
+					padding-top: 50px;
+					font-family: $font-montserrat;
+					text-transform: auto;
+					img {
+						width: 50px;
+						border-radius: 50%;
+					}
+					h5 {
+						color: #fff;
+						font-weight: bold;
+						letter-spacing: 1px;
+					}
+					p {
+						color: #fff;
+						letter-spacing: 1px;
+						opacity: 0.54;
+						padding-bottom: 15px;
+					}
+				}
+			}
+			@media screen and ( max-width: 640px ) {
+			 	display: none;
+			}
+		}
+		.background-holder {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            display: inline-block;
+            width: 100%;
+            vertical-align: top;
+            overflow: hidden;
+            z-index: -1;
+            margin-left: 0;
+            margin-right: 0; 
+        }
+        .tag-img {
+            min-width: 100%;
+            min-height: 100%;
+            float: left;
+        }
+	}	
+	.additional-info {
+		li{
+			margin-left: -4px;
+			a {
+				padding: 5px 11px;
+				border-right: 1px solid rgba(180, 180, 180, .38);
+				i {
+					font-size: 17px;
+				}
+				@media screen and ( max-width: 640px ) {
+			 		border: none;
+				}				
+			}
+			&:last-child a {
+				border: none;
+			}	
+		}
+	}
+}
